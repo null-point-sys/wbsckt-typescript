@@ -16,7 +16,7 @@ const app = express();
 
 
 // Rutas de servicios
-server.app.use('/', router );
+app.use('/', router );
 
 app.get("/", (req, res) => {
     res.json(JSON.stringify({ok: 1})).end();
