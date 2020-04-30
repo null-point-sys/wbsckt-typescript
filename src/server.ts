@@ -1,7 +1,7 @@
 import * as express from "express";
 import router from './router';
 import * as bodyParser from 'body-parser'; // * as -> important! to prevent heroku deploy errors
-import * as cors from 'cors';              // * as -> important! to prevent heroku deploy errors
+import cors from 'cors';              
 
 import log from "./log";
 
