@@ -1,31 +1,12 @@
-Typescript App on Heroku
-========================
+Api Rest Typescript en Heroku
+-------------------------------
+Api Rest Node.js + Express escrito en Typescript para hacer deploy en heroku.
 
-This is a simple Node.js + Express application written in Typescript
-that can be built and run on Heroku.
+- Deploy:
+Crea una app en Heroku e importa el código en Heroku.
 
-## Deploy
-To deploy this application simply create a new Heroku app
+Heroku descarga las librerias necesarias y dispara el proceso web definido en [Procfile](Procfile) que construye e inicializa la aplicación.
 
-```
-heroku create
-```
-
-and then just push the sources to Heroku
-
-```
-git push heroku master
-```
-
-Heroku will download all necessary libraries and fire the web
-process defined in [Procfile](Procfile) that will build and start
-the application.
-
-## How this works
-
-Typically you will add typescript as a devDependency to your package.json.
-But this won't work on Heroku since those dependencies are not downloaded
-(due to `NODE_ENV` being set to `production`).
-
-In order to go around this issue you just simply need to add typescript
-as a regular dependency and build the project after each push.
+En local normalmente se requiere agregar typescript como una dependencia de desarrollo (--save-dev) en el package.json.
+pero esto no trabaja en Heroku porque estas dependencias no están descargadas allí.
+(debido a que `NODE_ENV` se establece en` producción`). Para solucionar esto se requiere agregar typescript como una dependencia regular y hacer build del proyecto en cada push.
