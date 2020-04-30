@@ -1,7 +1,7 @@
 import * as express from "express";
 import router from './router';
-//import bodyParser from 'body-parser';
-import cors from 'cors';
+import bodyParser from 'body-parser';
+//import cors from 'cors';
 
 import log from "./log";
 
