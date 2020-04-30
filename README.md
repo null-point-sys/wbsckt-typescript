@@ -1,9 +1,8 @@
 Api Rest Typescript en Heroku
 -------------------------------
-Api Rest Node.js + Express escrito en Typescript para hacer deploy en heroku.
+Api Rest Node.js + Express escrito en Typescript para hacer deploy directamente en heroku sin instalar en local.
 
-- Deploy:
-Crea una app en Heroku e importa el código en Heroku.
+Deploy: Crea una app en Heroku e importa el código en Heroku.
 
 Heroku descarga las librerias necesarias y dispara el proceso web definido en [Procfile](Procfile) que construye e inicializa la aplicación.
 
