@@ -8,8 +8,8 @@ import log from "./log";
 const app = express();
 
 // BodyParser
-//app.use( bodyParser.urlencoded({ extended: true }) );
-//app.use( bodyParser.json() );
+app.use( bodyParser.urlencoded({ extended: true }) );
+app.use( bodyParser.json() );
 
 // CORS
 //app.use( cors({ origin: true, credentials: true  }) );
