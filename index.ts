@@ -1,18 +1,18 @@
 import Server from './src/server';
 import router from './src/router';
-import bodyParser from 'body-parser';
-import cors from 'cors';
+//import bodyParser from 'body-parser';
+//import cors from 'cors';
 
 
 
 const server = Server.instance;
 
 // BodyParser
-server.app.use( bodyParser.urlencoded({ extended: true }) );
-server.app.use( bodyParser.json() );
+//server.app.use( bodyParser.urlencoded({ extended: true }) );
+//server.app.use( bodyParser.json() );
 
 // CORS
-server.app.use( cors({ origin: true, credentials: true  }) );
+//server.app.use( cors({ origin: true, credentials: true  }) );
 
 
 // Rutas de servicios
