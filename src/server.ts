@@ -1,18 +1,18 @@
 import * as express from "express";
 import router from './router';
-import bodyParser from 'body-parser';
-import cors from 'cors';
+//import bodyParser from 'body-parser';
+//import cors from 'cors';
 
 import log from "./log";
 
 const app = express();
 
 // BodyParser
-app.use( bodyParser.urlencoded({ extended: true }) );
-app.use( bodyParser.json() );
+//app.use( bodyParser.urlencoded({ extended: true }) );
+//app.use( bodyParser.json() );
 
 // CORS
-app.use( cors({ origin: true, credentials: true  }) );
+//app.use( cors({ origin: true, credentials: true  }) );
 
 
 // Rutas de servicios
