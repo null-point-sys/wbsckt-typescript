@@ -1,8 +1,6 @@
 import express from 'express';
 import http from 'http';
 
-
-
 export default class Server {
 
     private static _intance: Server;
