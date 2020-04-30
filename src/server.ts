@@ -1,7 +1,7 @@
 import * as express from "express";
 import router from './router';
 import * as bodyParser from 'body-parser'; // * as -> important! to prevent heroku deploy errors
-import cors from 'cors';              
+//import cors from 'cors';              
 
 import log from "./log";
 
@@ -12,7 +12,7 @@ app.use( bodyParser.urlencoded({ extended: true }) );
 app.use( bodyParser.json() );
 
 // CORS
-app.use( cors({ origin: true, credentials: true  }) );
+//app.use( cors({ origin: true, credentials: true  }) );
 
 
 // Rutas de servicios
