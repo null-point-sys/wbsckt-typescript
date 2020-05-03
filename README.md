@@ -1,4 +1,4 @@
-API REST express server en Typescript para deploy automatico en Heroku
+API REST (GET y POST) express server en Typescript para deploy automatico en Heroku
 -------------------------------
 Api Rest Node.js + Express escrito en Typescript para hacer deploy directamente en heroku sin instalar en local.
 
