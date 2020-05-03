@@ -7,3 +7,9 @@ Deploy: Crea una app en Heroku e importa el código en Heroku.
 Heroku descarga las librerias necesarias y dispara el proceso web definido en [Procfile](Procfile) que construye e inicializa la aplicación. En local normalmente se requiere agregar typescript como una dependencia de desarrollo (--save-dev) en el package.json.
 pero esto no trabaja en Heroku porque estas dependencias no están descargadas allí.
 (debido a que `NODE_ENV` se establece en` producción`). Para solucionar esto se requiere agregar typescript como una dependencia regular y hacer build del proyecto en cada push.
+
+Para probar el REST API en Postman:
+
+GET https://wbsckt.herokuapp.com
+POST https://wbsckt.herokuapp.com/mensajes
+POST https://wbsckt.herokuapp.com/mensajes/xyz
