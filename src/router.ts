@@ -10,19 +10,21 @@ const usuario = new UsuariosLista();
 
 }); */
 
-/*router.post('/crearusuario', ( req: Request, res: Response  ) => {
+router.post('/crearusuario', ( req: Request, res: Response  ) => {
 
     const usu  = req.body.usu;
     const pass = req.body.pass; 
 
-    usuario.incrementarValor( mes, unidades );
+    const usuario = { u : usu, p: pass }
+   
+    usuario.agregar( usuario );
 
-    const server = Server.instance;
-    server.io.emit('cambio-grafica', grafica.getDataGrafica() );
+    /*const server = Server.instance;
+    server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
     
-    res.json( usuario.getDataGrafica() );
+    res.json( usuario.getLista() );
 
-}); */
+}); 
 
 router.get('/mensajes', ( req: Request, res: Response  ) => {
     res.json({
