@@ -19,6 +19,7 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const usuario = new Usuario('yt7asdfasd');
     
     usuarioLista.agregar( usuario );
+    usuarioLista.actualizarNombre( 'yt7asdfasd', usu, pass )
 
     /*const server = Server.instance;
     server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
