@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { UsuariosLista } from "usuarios-lista";
+import { UsuariosLista } from "./usuarios-lista";
 const router = Router();
 
 
