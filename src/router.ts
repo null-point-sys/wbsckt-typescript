@@ -24,10 +24,15 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     /*const server = Server.instance;
     server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
     
-    // res.json( usuarioLista.getUsuario('yt7asdfasd') ); //ok
-    res.json( usuarioLista.getLista() );
+    res.json( usuarioLista.getUsuario('yt7asdfasd') ); //ok
+});
 
-}); 
+router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
+    res.json({
+        ok: true,
+        clientes: usuarioLista.getLista()
+    });
+});
 
 router.get('/mensajes', ( req: Request, res: Response  ) => {
     res.json({
