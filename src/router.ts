@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { UsuariosLista } from "./usuarios-lista";
+import { Usuario } from "./usuario";
 const router = Router();
 
 const usuario = new UsuariosLista();
@@ -15,7 +16,7 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const usu  = req.body.usu;
     const pass = req.body.pass; 
 
-    const usuario = { u : usu, p: pass }
+    const usuario = new Usuario('yt7asdfasd');
    
     usuario.agregar( usuario );
 
