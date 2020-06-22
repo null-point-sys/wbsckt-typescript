@@ -3,7 +3,7 @@ import { UsuariosLista } from "./usuarios-lista";
 import { Usuario } from "./usuario";
 const router = Router();
 
-const usuario = new UsuariosLista();
+const usuarioLista = new UsuariosLista();
 
 /*router.get('/grafica', ( req: Request, res: Response  ) => {
 
@@ -17,8 +17,8 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const pass = req.body.pass; 
 
     const usuario = new Usuario('yt7asdfasd');
-   
-    usuario.agregar( usuario );
+    
+    usuarioLista.agregar( usuario );
 
     /*const server = Server.instance;
     server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
