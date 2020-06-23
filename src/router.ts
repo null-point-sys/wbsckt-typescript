@@ -16,9 +16,7 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const usu  = req.body.usu;
     const pass = req.body.pass; 
 
-    var r = Date.now();
-    var n = r.toString();
-    const usuario = new Usuario(n);
+    const usuario = new Usuario('f86sgdf');
     
     usuarioLista.agregar( usuario );
     usuarioLista.actualizarNombre( 'yt7asdfasd', usu, pass )
