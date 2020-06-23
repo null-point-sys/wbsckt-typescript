@@ -16,7 +16,7 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const usu  = req.body.usu;
     const pass = req.body.pass; 
 
-    let r = Date.now();
+    var r = Date.now();
     var n = r.toString();
     const usuario = new Usuario(n);
     
