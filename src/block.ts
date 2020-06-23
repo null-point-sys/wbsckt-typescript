@@ -1,4 +1,10 @@
-class Block{                      
+export class Block{
+  
+    public timestamp   : string;
+    public transactions: [];
+    public previousHash: string;
+    public hash        : string;
+  
   constructor(timestamp, transactions, previousHash = ''){        
     this.timestamp     = timestamp;    
     this.transactions  = transactions;
