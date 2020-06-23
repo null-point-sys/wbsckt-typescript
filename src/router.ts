@@ -21,12 +21,12 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const usuario = new Usuario(n);
     
     usuarioLista.agregar( usuario );
-    usuarioLista.actualizarNombre( 'yt7asdfasd', usu, pass )
+    usuarioLista.actualizarNombre( n, usu, pass )
 
     /*const server = Server.instance;
     server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
     
-    res.json( usuarioLista.getUsuario('yt7asdfasd') ); //ok
+    res.json( usuarioLista.getUsuario(n) ); //ok
 });
 
 /* router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
