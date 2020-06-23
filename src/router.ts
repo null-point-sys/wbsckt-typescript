@@ -16,12 +16,14 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     const usu  = req.body.usu;
     const pass = req.body.pass; 
 
-    var t = Date.now();
-    var n = t.toString();
-    const usuario = new Usuario(n);
+    // para ids diferentes:
+    //var t = Date.now();
+    //var n = t.toString();
+    //const usuario = new Usuario(n);
+    const usuario = new Usuario('bc');
     
     usuarioLista.agregar( usuario );
-    usuarioLista.actualizarNombre( n, usu, pass )
+    usuarioLista.actualizarNombre( 'bc', usu, pass )
 
     /*const server = Server.instance;
     server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
