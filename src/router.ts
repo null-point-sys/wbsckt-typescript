@@ -28,7 +28,7 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     /*const server = Server.instance;
     server.io.emit('cambio-grafica', grafica.getDataGrafica() ); */
     
-    res.json( usuarioLista.getUsuario(n) ); //ok
+    res.json( usuarioLista.getUsuario('bc') ); //ok
 });
 
 router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
