@@ -27,12 +27,12 @@ router.post('/crearusuario', ( req: Request, res: Response  ) => {
     res.json( usuarioLista.getUsuario('yt7asdfasd') ); //ok
 });
 
-router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
+/* router.get('/usuarios/detalle', (  req: Request, res: Response ) => {
     res.json({
         ok: true,
         clientes: usuarioLista.getLista()
     });
-});
+}); */
 
 router.get('/mensajes', ( req: Request, res: Response  ) => {
     res.json({
